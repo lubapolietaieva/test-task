@@ -1,24 +1,26 @@
-# README
+## Настройка окружения
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* создать файл `.ruby-gemset`, если используется rvm
+* установить версию ruby - см. `.ruby-version`
+* `bundle install`
+* база данных не нужна
 
-Things you may want to cover:
+## Основные требования
 
-* Ruby version
+* Сверстать главное меню по макету `design/upper_navigation_1.0.sketch`. Нужно сверстать только навигацию и меню, все, что ниже, не нужно.
+* Учесть требования по респансив-дизайну. Респансив основан на различиях, основанных на ширине _viewport_. 
+Макет следует понимать следующм образом:
+    * 1440 - viewport 1440px и больше
+    * 1024 - viewport 1024px - 1439px
+    * 768 - viewport 768px - 1023px
+    * 320 - viewport 767px и меньше
 
-* System dependencies
+* появлиение и исчезновение меню должно быть анимировано (варианты анимаци - на ваше усмотрение)
+* верстка и стили должны соответствовать _Light-BEM_-конвенции - см. `/wiki/BEM%20Light%20Convention`
+* результат нужно оформить в виде _pull-request_ в `master` ветку
 
-* Configuration
+## Дополнительные требования
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* использовать `sass`, при необходимости можно доустановить гем для автопрефиксов и т.п.
+* минимум `JavaScript`-а, в идеале все должно работать чисто на стилях (не факт, что это возможно)
+* если все-таки используете `JavaScript`, то используйте `CoffeeScript`
