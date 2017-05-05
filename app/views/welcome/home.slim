@@ -1,1 +1,197 @@
-h1 Hello!
+.l-wrapper
+  .l-content
+    .l-mainContent 
+      header.l-header
+        .l-header__content
+          .l-header__logo
+            .c-logo
+              a.c-logo__link[href="#" target="_blank"]
+                = inline_svg "logotype.svg", class: 'c-logo__img'
+          .l-header__nav.js-header__nav
+            .c-nav
+              ul.c-nav__list
+                li.c-nav__item.c-nav__item--button
+                  
+                li.c-nav__item 
+                    .c-nav__head Products
+                    .c-nav__contentWrap
+                      .c-nav__content
+                        .c-nav__blocks.c-nav__blocks--products
+                          .c-nav__block
+                            .c-category
+                              .c-category__content
+                                .c-category__leftPart
+                                  = inline_svg "bluePlane.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name Revard Expert
+                                  .c-category__text Service that will help people get miles and points for spending.
+                          .c-nav__block
+                            .c-category
+                              .c-category__content.cf
+                                .c-category__leftPart
+                                  = inline_svg "blackPlane.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name Data Routes
+                                  .c-category__text Service that will help people get the maximum benefit for spending.
+                          .c-nav__block
+                            .c-category
+                              .c-category__content.cf
+                                .c-category__leftPart
+                                  = inline_svg "greenPlane.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name Direct Routes
+                                  .c-category__text Check your tiket's value. Chose a best deal before you start your trip
+                          .c-nav__block
+                            .c-category
+                              .c-category__content.cf
+                                .c-category__leftPart
+                                  = inline_svg "violetDish.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name Personal Concierge
+                                  .c-category__text Service that will help people to book any tickets for miles and points
+                li.c-nav__item
+                    .c-nav__head Credit cards
+                    .c-nav__contentWrap.c-nav__contentWrap--cards
+                      .c-nav__content
+                        .c-nav__blocks.c-nav__blocks--cards
+                          .c-nav__block.c-nav__block--cards
+                            .c-category
+                              .c-category__content.c-category__content--cards
+                                .c-category__leftPart
+                                   = inline_svg "orangeDish.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name.c-category__name--cards Card Categories
+                                  a.c-category__link[href="#"] Best Credit Cards for You
+                                  a.c-category__link[href="#"] Balance Transfer Cards
+                                  a.c-category__link[href="#"] Low Intro Rate Cards
+                                  a.c-category__link[href="#"] No Annual Fee Cards
+                                  a.c-category__link[href="#"] Instant Decision Cards
+                                  a.c-category__link[href="#"] Best Prepaid Cards
+                          .c-nav__block.c-nav__block--cards
+                            .c-category
+                              .c-category__content.c-category__content--cards
+                                .c-category__leftPart
+                                   = inline_svg "redDish.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name.c-category__name--cards Reward Cards
+                                  a.c-category__link[href="#"] Cash Back Cards
+                                  a.c-category__link[href="#"] Airlines Cards
+                                  a.c-category__link[href="#"] Gasonline Cards
+                                  a.c-category__link[href="#"] Hotel Rewards Cards
+                        .c-nav__blocks.c-nav__blocks--cards
+                          .c-nav__block.c-nav__block--cards
+                            .c-category
+                              .c-category__content.c-category__content--cards
+                                .c-category__leftPart
+                                    = inline_svg "greenDish.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name.c-category__name--cards Recommended by Experts
+                                  .c-category__card
+                                    .c-card
+                                      .c-card__name Emporium Black Card
+                                      .c-card__picture
+                                      ul.c-card__description
+                                        li.c-card__text Less than Perfect Credit Accepted. Approval is quick and easy. Must be 18 years or older, have a valid checking account and a verifiable source of income.
+                                        li.c-card__text Less than Perfect Credit Accepted. Approval is quick and easy. Must be 18 years or older, have a valid checking account and a verifiable source of income.
+                                  a.c-category__link.c-category__link--bold.c-category__show[href="#" target="_blank"]
+                                    span All recommended cards
+                                    = inline_svg "categoryRightArrow.svg", class: 'c-category__rightArrow'
+                            .c-category.c-category--show
+                              .c-category__content.c-category__content--cards
+                                .c-category__leftPart
+                                    = inline_svg "blueDish.svg", class: 'c-category__icon'
+                                .c-category__rightPart
+                                  .c-category__name.c-category__name--cards Cards by Issuer
+                                  .c-card
+                                    a.c-card__cardLink[href="#" target="_blank"]
+                                      .c-card__icon
+                                      .c-card__link Visa®
+                                  .c-card
+                                    a.c-card__cardLink[href="#" target="_blank"]
+                                      .c-card__icon
+                                      .c-card__link MasterCard®
+                                  .c-card
+                                    a.c-card__cardLink[href="#" target="_blank"]
+                                      .c-card__icon
+                                      .c-card__link American Express®
+                                  .c-card
+                                    a.c-card__cardLink[href="#" target="_blank"]
+                                      .c-card__icon
+                                      .c-card__link Discover®
+                        .c-nav__blocks.c-nav__blocks--cards.c-nav__blocks--hide
+                          .c-nav__block.c-nav__block--cards
+                              .c-category
+                                .c-category__content.c-category__content--cards
+                                  .c-category__leftPart
+                                      = inline_svg "blueDish.svg", class: 'c-category__icon'
+                                  .c-category__rightPart
+                                    .c-category__name.c-category__name--cards Cards by Issuer
+                                    .c-card
+                                      a.c-card__cardLink[href="#" target="_blank"]
+                                        .c-card__icon
+                                        .c-card__link Visa®
+                                    .c-card
+                                      a.c-card__cardLink[href="#" target="_blank"]
+                                        .c-card__icon
+                                        .c-card__link MasterCard®
+                                    .c-card
+                                      a.c-card__cardLink[href="#" target="_blank"]
+                                        .c-card__icon
+                                        .c-card__link American Express®
+                                    .c-card
+                                      a.c-card__cardLink[href="#" target="_blank"]
+                                        .c-card__icon
+                                        .c-card__link Discover®
+                li.c-nav__item
+                    .c-nav__head Company
+                    .c-nav__contentWrap.c-nav__contentWrap--company
+                      .c-nav__content
+                        .c-nav__blocks.c-nav__blocks--company
+                          .c-nav__block.c-nav__block--company
+                            .c-category
+                              .c-category__content
+                                .c-category__leftPart
+                                  = inline_svg "aboutUs.svg", class: 'c-category__icon'
+                                .c-category__rightPart.c-category__rightPart--small
+                                  a.c-category__name.c-category__name--small.c-category__name--blue[href="#" target="_blank"] About Us
+                          .c-nav__block.c-nav__block--company
+                            .c-category
+                              .c-category__content
+                                .c-category__leftPart
+                                  = inline_svg "contactUs.svg", class: 'c-category__icon'
+                                .c-category__rightPart.c-category__rightPart--small
+                                  a.c-category__name.c-category__name--small.c-category__name--blue[href="#" target="_blank"] Contact Us
+                          .c-nav__block.c-nav__block--company
+                            .c-category
+                              .c-category__content
+                                .c-category__leftPart
+                                  = inline_svg "careers.svg", class: 'c-category__icon'
+                                .c-category__rightPart.c-category__rightPart--small
+                                   a.c-category__name.c-category__name--small.c-category__name--blue[href="#" target="_blank"] Careers
+                          .c-nav__block.c-nav__block--company
+                            .c-category
+                              .c-category__content
+                                .c-category__leftPart
+                                  = inline_svg "pressResources.svg", class: 'c-category__icon'
+                                .c-category__rightPart.c-category__rightPart--small
+                                   a.c-category__name.c-category__name--small.c-category__name--blue[href="#" target="_blank"] Press Resourses
+                li.c-nav__item.c-nav__item--blog
+                    .c-nav__head.c-nav__head--hide Blog
+                    = inline_svg "blogArrow.svg", class: 'c-nav__arrow c-nav__arrow--hide'
+                    .c-nav__head.c-nav__head--show Read Our Blog
+                    = inline_svg "blogArrow--blue.svg", class: 'c-nav__arrow c-nav__arrow--show'
+          .l-header__buttons
+            .l-header__button
+              .c-button
+                .c-button__content
+                  .c-button__text Login
+            .l-header__button
+              .c-button.c-button--green
+                .c-button__content
+                   = inline_svg "people.svg", class: 'c-button__img'
+                   .c-button__text Register
+            .l-header__burger.js-header__burger
+              .c-burger
+                .c-burger__content.js-burger__content
+                  span.c-burger__line.js-burger__line
+                  
