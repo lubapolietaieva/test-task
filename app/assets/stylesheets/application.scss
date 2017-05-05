@@ -112,6 +112,7 @@ body {
   flex: 1 0 auto;
 }
 
+
 .l-mainContent {
   width: 100%;
 //  max-width: 1440px;
@@ -121,11 +122,6 @@ body {
   @media (max-width: 1024px) {
     max-width: 952px;
   }
-}
-
-.l-content {
-  height: 100%;
-  display: table-row;
 }
 
 .hidden {
@@ -193,6 +189,10 @@ body {
   &__button {
     margin:  0 0.8rem;
     display: inline-block;
+    @media (max-width: 480px) {
+      display: none;
+    }
+    
   }
   
   &__burger {
@@ -202,14 +202,19 @@ body {
       margin-left: 1.8rem;
       display: inline-block;
       position: relative;
-//      opacity: 1;
-//      right: 0;
-
       &.is-active {
-//        position: relative;
         right: 5%;
-              animation: forBurger 1s linear;
-
+        animation: forBurger 1s linear;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      right:  1.5rem;
+      top: 1rem;
+      transtion: all 0.2s linear;
+      &.is-active {
+        right: 1.5rem;
+        animation: none;
       }
     }
   }
@@ -241,6 +246,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
+    @media (max-width: 768px) {
+      border-radius: 4px;
+      overflow: hidden;
+    }
   }
   &__item {
     padding:  3.2rem 2.6rem 2.4rem;
@@ -256,9 +265,6 @@ body {
       align-items: center;
     }
     
-    &--button {
-      display: none;
-    }
     @media (max-width: 768px) {
       width: 100%;
       padding: 1.6rem 1.6rem 0.4rem 1.6rem;
@@ -272,8 +278,38 @@ body {
         justify-content: center;
       }
     }
+    &--buttons {
+      display: none;
+      @media (max-width: 480px) {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 2.4rem;
+        border-bottom: none;
+        
+        .c-button {
+          margin: 0 0.8rem;
+        }
+      }
+    }
+    
     @media (max-width: 320px) {
       display: block;
+      
+      &--blog {
+        display: flex;
+      }
+      
+      &--buttons {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+      }
     }
   }
   
@@ -346,7 +382,10 @@ body {
       opacity: 1;
       position: static;
       transform: none;
-     
+    }
+    
+    @media (max-width: 480px) {
+      min-width: inherit;
     }
     
   }
@@ -420,6 +459,11 @@ body {
       @media (max-width: 768px) {
         max-width: 50%;
       }
+      
+      @media (max-width: 480px) {
+        display: block;
+      }
+      
     }
     
     @media (max-width: 768px) {
@@ -451,6 +495,13 @@ body {
         display: none;
       }
     }
+    @media (max-width: 480px) {
+      flex-flow: column wrap;
+      
+      &--company {
+        flex-flow: row wrap;
+      }
+    }
   }
   
   &__block {
@@ -463,6 +514,26 @@ body {
     
     &--company {
       min-width: 50%;
+    
+      @media (max-width: 480px) {
+        .c-category__leftPart {
+          display: none;
+        }
+        
+        .c-category__rightPart {
+//          width: 50%;
+        }
+        
+        .c-category__name {
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+      }
+    }
+    
+    @media (max-width: 480px) {
+      max-width: 100%;
+      display: block;
     }
     
   }
@@ -540,6 +611,15 @@ body {
       border: 1px solid $MAINGREEN;
     }
   }
+  
+  &--blue {
+    .c-button__content {
+      border: 1px solid #0091d9;
+    }
+    .c-button__text {
+      color: #0091d9;
+    }
+  }
 }
 /* end c-button*/
 
@@ -582,6 +662,16 @@ body {
       @media (max-width: 768px) {
         padding: 1.2rem;
       }
+      
+      @media (max-width: 480px) {
+        .c-category__leftPart {
+          display: none;
+        }
+      }
+      
+    }
+    @media (max-width: 768px) {
+      padding: 0.5rem 1.2rem;
     }
   }
   
@@ -589,11 +679,17 @@ body {
     width: 10%;
   }
   
+  
+  
   &__rightPart {
     width: 88%;
     margin-left: 2%;
     &--small {
       width: 80%;
+      
+      @media (max-width: 480px) {
+        width:  100%;
+      }
     }
   }
   
@@ -616,6 +712,13 @@ body {
     text-decoration: none;
     &--cards {
       padding: 0 1.2rem;
+      
+      @media (max-width: 768px) {
+        padding: 0;
+        color: #0091d9;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
     }
     &--small {
       font-size: 1.4rem;
@@ -634,6 +737,9 @@ body {
     line-height: 1.43;
     color: #626773;
     font-family: $MAINFONT;
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
   
   &__card {

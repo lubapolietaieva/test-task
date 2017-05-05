@@ -23,4 +23,9 @@ $(document).ready(function() {
       $(".js-header__nav").toggleClass("is-active");
       $(".js-header__burger").toggleClass("is-active");
     });
+  
+  var width = $(document).width();
+  if (width < 480) {
+    $(".js-category__name--cards").text("Recommended");
+  }
 });

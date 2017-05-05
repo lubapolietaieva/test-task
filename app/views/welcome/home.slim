@@ -10,8 +10,14 @@
           .l-header__nav.js-header__nav
             .c-nav
               ul.c-nav__list
-                li.c-nav__item.c-nav__item--button
-                  
+                li.c-nav__item.c-nav__item--buttons
+                  .c-button.c-button--blue
+                    .c-button__content
+                      .c-button__text Login
+                  .c-button.c-button--green
+                    .c-button__content
+                      = inline_svg "people.svg", class: 'c-button__img'
+                      .c-button__text Register
                 li.c-nav__item 
                     .c-nav__head Products
                     .c-nav__contentWrap
@@ -85,7 +91,7 @@
                                 .c-category__leftPart
                                     = inline_svg "greenDish.svg", class: 'c-category__icon'
                                 .c-category__rightPart
-                                  .c-category__name.c-category__name--cards Recommended by Experts
+                                  .c-category__name.c-category__name--cards.js-category__name--cards Recommended by Experts
                                   .c-category__card
                                     .c-card
                                       .c-card__name Emporium Black Card
